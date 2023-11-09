@@ -17,7 +17,7 @@ export default function Layout({
   wrapperCls,
 }) {
   const [scroll, setScroll] = useState(0);
-  // Mobile Menu
+  
   const [isMobileMenu, setMobileMenu] = useState(false);
   const handleMobileMenu = () => {
     setMobileMenu(!isMobileMenu);
