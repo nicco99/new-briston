@@ -50,7 +50,7 @@ export default function Header1({
               <div className="logo-box">
                 <div className="logo">
                   <Link href="/">
-                    <Image width={50} height={50} src="/assets/images/logo-1.jpg" alt="" />
+                    <img src="/assets/images/logo-1.jpg" alt="" />
                   </Link>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function Header1({
                 {/*Mobile Navigation Toggler*/}
 
                 <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
-                  <img src="/assets/images/icons/icon-bar.png" alt="" />
+                  <Image width={50} height={50} src="/assets/images/icons/icon-bar.png" alt="image" />
                 </div>
                 {/* Main Menu */}
                 <nav className="main-menu navbar-expand-md navbar-light">
