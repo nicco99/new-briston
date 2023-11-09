@@ -17,10 +17,10 @@ export default function Layout({
   wrapperCls,
 }) {
   const [scroll, setScroll] = useState(0);
-  // Mobile Menu
+
   const [isMobileMenu, setMobileMenu] = useState(false);
   const handleMobileMenu = () => {
-    setMobileMenu(!isMobileMenu);
+    setMobileMenu(isMobileMenu => !isMobileMenu);
     !isMobileMenu
       ? document.body.classList.add("mobile-menu-visible")
       : document.body.classList.remove("mobile-menu-visible");
