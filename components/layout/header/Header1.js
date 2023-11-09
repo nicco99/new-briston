@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Menu from "../Menu";
 import MobileMenu from "../MobileMenu";
-
+import Image from "next/image";
+import { BiMenu } from "react-icons/bi";
 export default function Header1({
   scroll,
   isMobileMenu,
@@ -15,8 +16,7 @@ export default function Header1({
       <header
         className={`main-header header-style-one ${
           scroll ? "fixed-header" : ""
-        }`}
-      >
+        }`}>
         <div className="header-top">
           <div className="auto-container">
             <div className="inner">
@@ -59,14 +59,14 @@ export default function Header1({
               <div className="nav-outer clearfix">
                 {/*Mobile Navigation Toggler*/}
                 <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
-                  <img src="/assets/images/icons/icon-bar.png" alt="" />
+                  <BiMenu onClick={handleMobileMenu}/>
+                  {/* <Image width={50} height={50} src="/assets/images/icons/icon-bar.png" alt="image" /> */}
                 </div>
                 {/* Main Menu */}
                 <nav className="main-menu navbar-expand-md navbar-light">
                   <div
                     className="collapse navbar-collapse show clearfix"
-                    id="navbarSupportedContent"
-                  >
+                    id="navbarSupportedContent">
                     <Menu />
                   </div>
                 </nav>
@@ -75,8 +75,7 @@ export default function Header1({
                   <button
                     type="button"
                     className="theme-btn search-toggler"
-                    onClick={handlePopup}
-                  >
+                    onClick={handlePopup}>
                     <span className="flaticon-search" />
                   </button>
                   {/*Sidemenu Navigation Toggler*/}
@@ -91,8 +90,7 @@ export default function Header1({
         {/*End Header Upper*/}
         {/* Sticky Header  */}
         <div
-          className={`sticky-header ${scroll ? "animated slideInDown" : ""}`}
-        >
+          className={`sticky-header ${scroll ? "animated slideInDown" : ""}`}>
           <div className="header-upper">
             <div className="auto-container">
               <div className="inner-container clearfix">
@@ -109,8 +107,7 @@ export default function Header1({
                   {/*Mobile Navigation Toggler*/}
                   <div
                     className="mobile-nav-toggler"
-                    onClick={handleMobileMenu}
-                  >
+                    onClick={handleMobileMenu}>
                     <img src="/assets/images/icons/icon-bar.png" alt="" />
                   </div>
                   {/* Main Menu */}
@@ -122,15 +119,13 @@ export default function Header1({
                     <button
                       type="button"
                       className="theme-btn search-toggler"
-                      onClick={handlePopup}
-                    >
+                      onClick={handlePopup}>
                       <span className="flaticon-search" />
                     </button>
                     {/*Sidemenu Navigation Toggler*/}
                     <div
                       className="sidemenu-nav-toggler"
-                      onClick={handleSidebar}
-                    >
+                      onClick={handleSidebar}>
                       <img src="/assets/images/icons/icon-bar.png" alt="" />
                     </div>
                   </div>
