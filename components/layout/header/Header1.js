@@ -58,10 +58,10 @@ export default function Header1({
               {/*Nav Box*/}
               <div className="nav-outer clearfix">
                 {/*Mobile Navigation Toggler*/}
-
+                <BiMenu />
                 <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
-                  <BiMenu />
-                  <Image width={50} height={50} src="/assets/images/icons/icon-bar.png" alt="image" />
+                 
+                  {/* <Image width={50} height={50} src="/assets/images/icons/icon-bar.png" alt="image" /> */}
                 </div>
                 {/* Main Menu */}
                 <nav className="main-menu navbar-expand-md navbar-light">
