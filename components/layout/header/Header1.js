@@ -2,6 +2,7 @@ import Link from "next/link";
 import Menu from "../Menu";
 import MobileMenu from "../MobileMenu";
 import Image from "next/image";
+import { BiMenu } from "react-icons/bi";
 export default function Header1({
   scroll,
   isMobileMenu,
@@ -59,6 +60,7 @@ export default function Header1({
                 {/*Mobile Navigation Toggler*/}
 
                 <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
+                  <BiMenu />
                   <Image width={50} height={50} src="/assets/images/icons/icon-bar.png" alt="image" />
                 </div>
                 {/* Main Menu */}
