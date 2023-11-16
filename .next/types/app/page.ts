@@ -1,4 +1,4 @@
-// File: /home/nicco/personal-projects/work_projects/Hi-Nex/new bristol/briston-hr/app/page.js
+// File: /home/jeff/Documents/new-briston/app/page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
