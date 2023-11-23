@@ -88,14 +88,14 @@ export default function ClientSlider1() {
         <SwiperSlide className="slide-item">
           <figure className="image-box">
             <Link href="#">
-              <img src="/assets/images/resource/client-1.jpg" alt="" />
+              <img src="/assets/images/resource/client8.jpg" alt="" />
             </Link>
           </figure>
         </SwiperSlide>
         <SwiperSlide className="slide-item">
           <figure className="image-box">
             <Link href="#">
-              <img src="/assets/images/resource/client-2.jpg" alt="" />
+              <img src="/assets/images/resource/client9.jpg" alt="" />
             </Link>
           </figure>
         </SwiperSlide>
