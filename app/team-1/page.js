@@ -41,7 +41,7 @@ export default function Home() {
                         <li>
                           <Link href="#">
                             <span className="flaticon-bag" />
-                            alex@bristonhr.com
+                            akiemo@bristonhr.com
                           </Link>
                         </li>
                       </ul>
@@ -62,20 +62,20 @@ export default function Home() {
                         <li>
                           <Link href="#">
                             <span className="flaticon-call" />
-                            +25444 555 123
+                            +254 719 643 863
                           </Link>
                         </li>
                         <li>
                           <Link href="#">
                             <span className="flaticon-bag" />
-                            cloris@bristonhr.com
+                            cmutuku@bristonhr.com
                           </Link>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div className="team-block-one col-lg-3 col-md-6">
+                {/* <div className="team-block-one col-lg-3 col-md-6">
                   <div className="inner-box">
                     <div className="image">
                       <img src="/assets/images/resource/avatar.jpg" alt="" />
@@ -101,8 +101,8 @@ export default function Home() {
                       </ul>
                     </div>
                   </div>
-                </div>
-                <div className="team-block-one col-lg-3 col-md-6">
+                </div> */}
+                {/* <div className="team-block-one col-lg-3 col-md-6">
                   <div className="inner-box">
                     <div className="image">
                       <img src="/assets/images/resource/avatar.jpg" alt="" />
@@ -126,7 +126,7 @@ export default function Home() {
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* <div className="team-block-one col-lg-3 col-md-6">
                   <div className="inner-box">
                     <div className="image">
