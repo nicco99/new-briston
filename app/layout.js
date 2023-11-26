@@ -1,5 +1,5 @@
 import "@/node_modules/react-modal-video/css/modal-video.css";
-
+import "../global.css"
 import "public/assets/css/bootstrap.css";
 import "public/assets/css/color.css";
 import "public/assets/css/color-2.css";

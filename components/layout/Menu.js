@@ -66,14 +66,14 @@ export default function Menu() {
             <li>
               <Link href="/faq">FAQ’s</Link>
             </li>
-            {/* <li className="dropdown">
-              <Link href="/pricing-1">Pricing &amp; Plans</Link>
+            <li className="dropdown">
+              <Link href="/dashboard/jobs">Jobs</Link>
               <ul>
                 <li>
-                  <Link href="/pricing-1">Pricing Style 01</Link>
+                  <Link href="/dashboard/job-post">Post job</Link>
                 </li>
               </ul>
-            </li> */}
+            </li>
             <li className="dropdown">
               <Link href="/testimonial-1">Testimonial</Link>
               <ul>

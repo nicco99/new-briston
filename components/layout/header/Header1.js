@@ -58,8 +58,11 @@ export default function Header1({
               {/*Nav Box*/}
               <div className="nav-outer clearfix">
                 {/*Mobile Navigation Toggler*/}
-                <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
-                  <BiMenu onClick={handleMobileMenu}/>
+                <div className="mobile-nav-toggler " onClick={handleMobileMenu}>
+                  <BiMenu
+                    className="mx-auto mt-3"
+                    onClick={handleMobileMenu}
+                  />
                   {/* <Image width={50} height={50} src="/assets/images/icons/icon-bar.png" alt="image" /> */}
                 </div>
                 {/* Main Menu */}
