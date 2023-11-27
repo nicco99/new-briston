@@ -37,49 +37,40 @@ export default function MobileMenu({
             </Link>
           </div>
           <div className="menu-outer">
-            <div
-              className="collapse navbar-collapse show clearfix"
-              id="navbarSupportedContent"
-            >
+            <div className="" id="navbarSupportedContent">
               <ul className="navigation clearfix">
                 <li
                   className={
                     isActive.key == 1 ? "dropdown current" : "dropdown"
-                  }
-                >
+                  }>
                   <Link href="/">Home</Link>
 
                   <div
                     className={
                       isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"
                     }
-                    onClick={() => handleToggle(1)}
-                  >
+                    onClick={() => handleToggle(1)}>
                     <span className="fa fa-angle-right" />
                   </div>
                 </li>
                 <li
                   className={
                     isActive.key == 2 ? "dropdown current" : "dropdown"
-                  }
-                >
+                  }>
                   <Link href="/#">Company</Link>
                   <ul
                     style={{
                       display: `${isActive.key == 2 ? "block" : "none"}`,
-                    }}
-                  >
+                    }}>
                     <li
                       className={
                         isActive.key == 8 ? "dropdown current" : "dropdown"
-                      }
-                    >
+                      }>
                       <Link href="/about-2">About Us</Link>
                       <ul
                         style={{
                           display: `${isActive.key == 8 ? "block" : "none"}`,
-                        }}
-                      >
+                        }}>
                         <li>
                           <Link href="/about-2">About Style 01</Link>
                         </li>
@@ -90,22 +81,19 @@ export default function MobileMenu({
                             ? "dropdown-btn open"
                             : "dropdown-btn"
                         }
-                        onClick={() => handleToggle(8)}
-                      >
+                        onClick={() => handleToggle(8)}>
                         <span className="fa fa-angle-right" />
                       </div>
                     </li>
                     <li
                       className={
                         isActive.key == 9 ? "dropdown current" : "dropdown"
-                      }
-                    >
+                      }>
                       <Link href="/team-1">Meet Our Team</Link>
                       <ul
                         style={{
                           display: `${isActive.key == 9 ? "block" : "none"}`,
-                        }}
-                      >
+                        }}>
                         <li>
                           <Link href="/team-1">Team Style 01</Link>
                         </li>
@@ -120,8 +108,7 @@ export default function MobileMenu({
                             ? "dropdown-btn open"
                             : "dropdown-btn"
                         }
-                        onClick={() => handleToggle(9)}
-                      >
+                        onClick={() => handleToggle(9)}>
                         <span className="fa fa-angle-right" />
                       </div>
                     </li>
@@ -130,22 +117,19 @@ export default function MobileMenu({
                     className={
                       isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"
                     }
-                    onClick={() => handleToggle(2)}
-                  >
+                    onClick={() => handleToggle(2)}>
                     <span className="fa fa-angle-right" />
                   </div>
                 </li>
                 <li
                   className={
                     isActive.key == 3 ? "dropdown current" : "dropdown"
-                  }
-                >
+                  }>
                   <Link href="/#">Services</Link>
                   <ul
                     style={{
                       display: `${isActive.key == 3 ? "block" : "none"}`,
-                    }}
-                  >
+                    }}>
                     <li>
                       <Link href="/services">Our All Services</Link>
                     </li>
@@ -154,36 +138,31 @@ export default function MobileMenu({
                     className={
                       isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"
                     }
-                    onClick={() => handleToggle(3)}
-                  >
+                    onClick={() => handleToggle(3)}>
                     <span className="fa fa-angle-right" />
                   </div>
                 </li>
                 <li
                   className={
                     isActive.key == 4 ? "dropdown current" : "dropdown"
-                  }
-                >
+                  }>
                   <Link href="/#">Pages</Link>
                   <ul
                     style={{
                       display: `${isActive.key == 4 ? "block" : "none"}`,
-                    }}
-                  >
+                    }}>
                     {/* <li>
                       <Link href="/career">Career</Link>
                     </li> */}
                     <li
                       className={
                         isActive.key == 10 ? "dropdown current" : "dropdown"
-                      }
-                    >
+                      }>
                       <Link href="/contact-1">Contact</Link>
                       <ul
                         style={{
                           display: `${isActive.key == 10 ? "block" : "none"}`,
-                        }}
-                      >
+                        }}>
                         <li>
                           <Link href="/contact-1">Contact Style 01</Link>
                         </li>
@@ -194,14 +173,14 @@ export default function MobileMenu({
                             ? "dropdown-btn open"
                             : "dropdown-btn"
                         }
-                        onClick={() => handleToggle(10)}
-                      >
+                        onClick={() => handleToggle(10)}>
                         <span className="fa fa-angle-right" />
                       </div>
                     </li>
-                    {/* <li>
+                    <li>
                       <Link href="/faq">FAQ’s</Link>
                     </li>
+                    {/*
                     <li
                       className={
                         isActive.key == 11 ? "dropdown current" : "dropdown"
@@ -231,14 +210,12 @@ export default function MobileMenu({
                     <li
                       className={
                         isActive.key == 12 ? "dropdown current" : "dropdown"
-                      }
-                    >
+                      }>
                       <Link href="/testimonial-1">Testimonial</Link>
                       <ul
                         style={{
                           display: `${isActive.key == 12 ? "block" : "none"}`,
-                        }}
-                      >
+                        }}>
                         <li>
                           <Link href="/testimonial-1">
                             Testimonial Style 01
@@ -251,8 +228,7 @@ export default function MobileMenu({
                             ? "dropdown-btn open"
                             : "dropdown-btn"
                         }
-                        onClick={() => handleToggle(12)}
-                      >
+                        onClick={() => handleToggle(12)}>
                         <span className="fa fa-angle-right" />
                       </div>
                     </li>
@@ -264,8 +240,7 @@ export default function MobileMenu({
                     className={
                       isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"
                     }
-                    onClick={() => handleToggle(4)}
-                  >
+                    onClick={() => handleToggle(4)}>
                     <span className="fa fa-angle-right" />
                   </div>
                 </li>
@@ -331,36 +306,32 @@ export default function MobileMenu({
                 <li
                   className={
                     isActive.key == 6 ? "dropdown current" : "dropdown"
-                  }
-                >
+                  }>
                   <Link href="/contact-1">Contact</Link>
                   <ul
                     style={{
                       display: `${isActive.key == 6 ? "block" : "none"}`,
-                    }}
-                  >
+                    }}>
                     <li
                       className={
                         isActive.key == 14 ? "dropdown current" : "dropdown"
-                      }
-                    >
-                      <Link href="/contact-1">Contact Style 01</Link>
+                      }>
+                      {/* <Link href="/contact-1">Contact Style 01</Link> */}
                       <ul
                         style={{
                           display: `${isActive.key == 14 ? "block" : "none"}`,
-                        }}
-                      ></ul>
+                        }}></ul>
                       <div
                         className={
                           isActive.key == 14
                             ? "dropdown-btn open"
                             : "dropdown-btn"
                         }
-                        onClick={() => handleToggle(14)}
-                      >
+                        onClick={() => handleToggle(14)}>
                         <span className="fa fa-angle-right" />
                       </div>
                     </li>
+
                     {/* <li
                       className={
                         isActive.key == 14 ? "dropdown current" : "dropdown"
@@ -452,12 +423,36 @@ export default function MobileMenu({
                       </div>
                     </li> */}
                   </ul>
+                  <li
+                    className={
+                      isActive.key == 14 ? "dropdown current" : "dropdown"
+                    }>
+                    <Link href="/dashboard/jobs">Jobs</Link>
+
+                    <ul
+                      style={{
+                        display: `${isActive.key == 14 ? "block" : "none"}`,
+                      }}>
+                      <li>
+                        {" "}
+                        <Link href="/dashboard/job-post">Post Job</Link>
+                      </li>
+                    </ul>
+                    <div
+                      className={
+                        isActive.key == 14
+                          ? "dropdown-btn open"
+                          : "dropdown-btn"
+                      }
+                      onClick={() => handleToggle(14)}>
+                      <span className="fa fa-angle-right" />
+                    </div>
+                  </li>
                   <div
                     className={
                       isActive.key == 6 ? "dropdown-btn open" : "dropdown-btn"
                     }
-                    onClick={() => handleToggle(6)}
-                  >
+                    onClick={() => handleToggle(6)}>
                     <span className="fa fa-angle-right" />
                   </div>
                 </li>

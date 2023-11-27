@@ -1,8 +1,10 @@
+"use client";
 import Link from "next/link";
 import Menu from "../Menu";
 import MobileMenu from "../MobileMenu";
 import Image from "next/image";
-import { BiMenu } from "react-icons/bi";
+import { BiLogOut, BiMenu } from "react-icons/bi";
+import { useRouter } from "next/navigation";
 export default function Header1({
   scroll,
   isMobileMenu,
@@ -11,13 +13,18 @@ export default function Header1({
   handlePopup,
   handleSidebar,
 }) {
+  const token = localStorage.getItem("token");
+  const router = useRouter()
+  const logOut = () => {
+    localStorage.clear("token");
+    router.push("/login")
+  };
   return (
     <>
       <header
         className={`main-header header-style-one ${
           scroll ? "fixed-header" : ""
-        }`}
-      >
+        }`}>
         <div className="header-top">
           <div className="auto-container">
             <div className="inner">
@@ -41,6 +48,14 @@ export default function Header1({
                   </li>
                 </ul>
               </div>
+              {token && (
+                <button
+                  onClick={logOut}
+                  className="bg-green-500 px-3 py-1 rounded-sm text-[#ffffff] flex justify-center items-center gap-1">
+                  <span className="text-sm font-[500]">logout</span>{" "}
+                  <BiLogOut />
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -59,26 +74,25 @@ export default function Header1({
               {/*Nav Box*/}
               <div className="nav-outer clearfix">
                 {/*Mobile Navigation Toggler*/}
-                <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
-                  <BiMenu onClick={handleMobileMenu} />
+                <div className="mobile-nav-toggler " onClick={handleMobileMenu}>
+                  <BiMenu className="mx-auto mt-3" onClick={handleMobileMenu} />
                   {/* <Image width={50} height={50} src="/assets/images/icons/icon-bar.png" alt="image" /> */}
                 </div>
                 {/* Main Menu */}
                 <nav className="main-menu navbar-expand-md navbar-light">
-                  <div
-                    className="collapse navbar-collapse show clearfix"
-                    id="navbarSupportedContent"
-                  >
-                    <Menu />
-                  </div>
+                  <Menu />
+                  {/* <div
+                    className="collapse navbar-collapse  clearfix"
+                    id="navbarSupportedContent">
+                  </div> */}
                 </nav>
+
                 {/* Main Menu End*/}
                 <div className="navbar-right-info">
                   <button
                     type="button"
                     className="theme-btn search-toggler"
-                    onClick={handlePopup}
-                  >
+                    onClick={handlePopup}>
                     <span className="flaticon-search" />
                   </button>
                   {/*Sidemenu Navigation Toggler*/}
@@ -93,8 +107,7 @@ export default function Header1({
         {/*End Header Upper*/}
         {/* Sticky Header  */}
         <div
-          className={`sticky-header ${scroll ? "animated slideInDown" : ""}`}
-        >
+          className={`sticky-header ${scroll ? "animated slideInDown" : ""}`}>
           <div className="header-upper">
             <div className="auto-container">
               <div className="inner-container clearfix">
@@ -111,8 +124,7 @@ export default function Header1({
                   {/*Mobile Navigation Toggler*/}
                   <div
                     className="mobile-nav-toggler"
-                    onClick={handleMobileMenu}
-                  >
+                    onClick={handleMobileMenu}>
                     <img src="/assets/images/icons/icon-bar.png" alt="" />
                   </div>
                   {/* Main Menu */}
@@ -124,15 +136,13 @@ export default function Header1({
                     <button
                       type="button"
                       className="theme-btn search-toggler"
-                      onClick={handlePopup}
-                    >
+                      onClick={handlePopup}>
                       <span className="flaticon-search" />
                     </button>
                     {/*Sidemenu Navigation Toggler*/}
                     <div
                       className="sidemenu-nav-toggler"
-                      onClick={handleSidebar}
-                    >
+                      onClick={handleSidebar}>
                       <img src="/assets/images/icons/icon-bar.png" alt="" />
                     </div>
                   </div>

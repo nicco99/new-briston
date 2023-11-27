@@ -1,10 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/dashboard/jobs/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/chunks/app/dashboard/jobs/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -22,10 +21,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/team-1/page": [
+    "/dashboard/job-edit/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/team-1/page.js"
+      "static/chunks/app/dashboard/job-edit/[id]/page.js"
     ]
   }
 }
