@@ -44,7 +44,7 @@ const JobCard = ({
       <p className="text-left mb-5">
         Application deadline: <span className="font-[700]">{deadline}</span>
       </p>
-      <button className="bg-blue-500 p-2 mt-3 rounded-md text-[#ffffff]">
+      <button className="bg-blue-500 mb-2 p-2 mt-3 rounded-md text-[#ffffff]">
         Easy apply
       </button>
       {token && (
