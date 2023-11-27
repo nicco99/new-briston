@@ -238,25 +238,25 @@ export default function Footer1() {
             </div>
             <ul className="social-links clearfix">
               <li>
-                <Link href="#">
+                <Link href="https://www.facebook.com/bristonhr">
                   <span className="fab fa-facebook-f" />
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="https://twitter.com/bristonhr">
                   <span className="fab fa-twitter" />
                 </Link>
               </li>
               <li>
-                <Link href="#">
-                  <span className="fab fa-google-plus-g" />
+                <Link href="https://www.linkedin.com/company/briston-human-resources">
+                  <span className="fab fa-linkedin" />
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#">
                   <span className="fab fa-skype" />
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <div className="copyright">
               © {new Date().getFullYear()} <Link href="#">BRISTONHR</Link>{" "}

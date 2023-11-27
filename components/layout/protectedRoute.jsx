@@ -10,7 +10,7 @@ const ProtectedRoute = ({ children }) => {
     const isAuthenticated = localStorage.getItem("token");
     if (!isAuthenticated) {
       // If not authenticated, redirect to the login page
-      router.push("/");
+      router.push("/login");
     }
   }, []);
 
