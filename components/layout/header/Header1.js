@@ -75,12 +75,12 @@ export default function Header1({
               <div className="nav-outer clearfix">
                 {/*Mobile Navigation Toggler*/}
                 <div
-                  className="rounded-full lg:hidden mt-3 bg-green-500 flex justify-center items-center h-10 w-10"
+                  className="rounded-full lg:hidden  bg-green-500 flex justify-center items-center h-10 w-10"
                   onClick={handleMobileMenu}>
                   <BiMenu
                     className="mx-auto text-[#ffffff]"
                     onClick={handleMobileMenu}
-                  />  
+                  />
                 </div>
                 {/* Main Menu */}
                 <nav className="main-menu navbar-expand-md navbar-light">
