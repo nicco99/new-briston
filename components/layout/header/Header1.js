@@ -57,6 +57,29 @@ export default function Header1({
                 </button>
               )}
             </div>
+            <div
+                  className="rounded-full lg:hidden  bg-green-500 flex justify-center items-center h-10 w-10"
+                  onClick={handleMobileMenu}>
+                  {/* <BiMenu
+                    className="mx-auto text-[#ffffff]"
+                    onClick={handleMobileMenu}
+                  /> */}
+                  <svg
+                    className="text-[#ffffff]"
+                    onClick={handleMobileMenu}
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffffff"
+                    class="w-6 h-6">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                    />
+                  </svg>
+                </div>
           </div>
         </div>
         {/* Header Upper */}
@@ -74,29 +97,7 @@ export default function Header1({
               {/*Nav Box*/}
               <div className="nav-outer clearfix">
                 {/*Mobile Navigation Toggler*/}
-                <div
-                  className="rounded-full lg:hidden  bg-green-500 flex justify-center items-center h-10 w-10"
-                  onClick={handleMobileMenu}>
-                  {/* <BiMenu
-                    className="mx-auto text-[#ffffff]"
-                    onClick={handleMobileMenu}
-                  /> */}
-                  <svg
-                    className=" text-[#ffffff]"
-                    onClick={handleMobileMenu}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#ffffff"
-                    class="w-6 h-6">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-                    />
-                  </svg>
-                </div>
+               
                 {/* Main Menu */}
                 <nav className="main-menu navbar-expand-md navbar-light">
                   <Menu />
