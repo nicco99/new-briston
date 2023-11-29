@@ -180,33 +180,7 @@ export default function MobileMenu({
                     <li>
                       <Link href="/faq">FAQ’s</Link>
                     </li>
-                    {/*
-                    <li
-                      className={
-                        isActive.key == 11 ? "dropdown current" : "dropdown"
-                      }
-                    >
-                      <Link href="/pricing-1">Pricing &amp; Plans</Link>
-                      <ul
-                        style={{
-                          display: `${isActive.key == 11 ? "block" : "none"}`,
-                        }}
-                      >
-                        <li>
-                          <Link href="/pricing-1">Pricing Style 01</Link>
-                        </li>
-                      </ul>
-                      <div
-                        className={
-                          isActive.key == 11
-                            ? "dropdown-btn open"
-                            : "dropdown-btn"
-                        }
-                        onClick={() => handleToggle(11)}
-                      >
-                        <span className="fa fa-angle-right" />
-                      </div>
-                    </li> */}
+
                     <li
                       className={
                         isActive.key == 12 ? "dropdown current" : "dropdown"
@@ -232,9 +206,6 @@ export default function MobileMenu({
                         <span className="fa fa-angle-right" />
                       </div>
                     </li>
-                    {/* <li>
-                      <Link href="/404">404</Link>
-                    </li> */}
                   </ul>
                   <div
                     className={
@@ -244,65 +215,6 @@ export default function MobileMenu({
                     <span className="fa fa-angle-right" />
                   </div>
                 </li>
-                {/* <li
-                  className={
-                    isActive.key == 5 ? "dropdown current" : "dropdown"
-                  }
-                >
-                  <Link href="/#">Portfolio</Link>
-                  <ul
-                    style={{
-                      display: `${isActive.key == 5 ? "block" : "none"}`,
-                    }}
-                  >
-                    <li
-                      className={
-                        isActive.key == 13 ? "dropdown current" : "dropdown"
-                      }
-                    >
-                      <Link href="/#">Portfolio Grid</Link>
-                      <ul
-                        style={{
-                          display: `${isActive.key == 13 ? "block" : "none"}`,
-                        }}
-                      >
-                        <li>
-                          <Link href="/portfolio-1">Grid View 01</Link>
-                        </li>
-                        <li>
-                          <Link href="/portfolio-2">Grid View 02</Link>
-                        </li>
-                        <li>
-                          <Link href="/portfolio-3">Grid View 03</Link>
-                        </li>
-                      </ul>
-                      <div
-                        className={
-                          isActive.key == 13
-                            ? "dropdown-btn open"
-                            : "dropdown-btn"
-                        }
-                        onClick={() => handleToggle(13)}
-                      >
-                        <span className="fa fa-angle-right" />
-                      </div>
-                    </li>
-                    <li>
-                      <Link href="/portfolio-4">Portfolio Masonry</Link>
-                    </li>
-                    <li>
-                      <Link href="/portfolio-details">Portfolio Details</Link>
-                    </li>
-                  </ul>
-                  <div
-                    className={
-                      isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"
-                    }
-                    onClick={() => handleToggle(5)}
-                  >
-                    <span className="fa fa-angle-right" />
-                  </div>
-                </li> */}
                 <li
                   className={
                     isActive.key == 6 ? "dropdown current" : "dropdown"
@@ -331,97 +243,6 @@ export default function MobileMenu({
                         <span className="fa fa-angle-right" />
                       </div>
                     </li>
-
-                    {/* <li
-                      className={
-                        isActive.key == 14 ? "dropdown current" : "dropdown"
-                      }
-                    >
-                      <Link href="/#">Blog Grdi View</Link>
-                      <ul
-                        style={{
-                          display: `${isActive.key == 14 ? "block" : "none"}`,
-                        }}
-                      >
-                        <li>
-                          <Link href="/blog-4">Left Sidebar</Link>
-                        </li>
-                        <li>
-                          <Link href="/blog-5">Right Sidebar</Link>
-                        </li>
-                      </ul>
-                      <div
-                        className={
-                          isActive.key == 14
-                            ? "dropdown-btn open"
-                            : "dropdown-btn"
-                        }
-                        onClick={() => handleToggle(14)}
-                      >
-                        <span className="fa fa-angle-right" />
-                      </div>
-                    </li> */}
-                    {/* <li
-                      className={
-                        isActive.key == 15 ? "dropdown current" : "dropdown"
-                      }
-                    >
-                      <Link href="/#">Blog List View</Link>
-                      <ul
-                        style={{
-                          display: `${isActive.key == 15 ? "block" : "none"}`,
-                        }}
-                      >
-                        <li>
-                          <Link href="/blog-6">Full Width</Link>
-                        </li>
-                        <li>
-                          <Link href="/blog-7">Left Sidebar</Link>
-                        </li>
-                        <li>
-                          <Link href="/blog-8">Right Sidebar</Link>
-                        </li>
-                      </ul>
-                      <div
-                        className={
-                          isActive.key == 15
-                            ? "dropdown-btn open"
-                            : "dropdown-btn"
-                        }
-                        onClick={() => handleToggle(15)}
-                      >
-                        <span className="fa fa-angle-right" />
-                      </div>
-                    </li> */}
-                    {/* <li
-                      className={
-                        isActive.key == 16 ? "dropdown current" : "dropdown"
-                      }
-                    >
-                      <Link href="/#">Single Post</Link>
-                      <ul
-                        style={{
-                          display: `${isActive.key == 16 ? "block" : "none"}`,
-                        }}
-                      >
-                        <li>
-                          <Link href="/blog-details">With Sidebar</Link>
-                        </li>
-                        <li>
-                          <Link href="/blog-details-2">Without Sidebar</Link>
-                        </li>
-                      </ul>
-                      <div
-                        className={
-                          isActive.key == 16
-                            ? "dropdown-btn open"
-                            : "dropdown-btn"
-                        }
-                        onClick={() => handleToggle(16)}
-                      >
-                        <span className="fa fa-angle-right" />
-                      </div>
-                    </li> */}
                   </ul>
                   <li
                     className={
