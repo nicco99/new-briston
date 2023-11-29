@@ -3,6 +3,7 @@ import Link from "next/link";
 import Menu from "../Menu";
 import MobileMenu from "../MobileMenu";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { BiLogOut, BiMenu } from "react-icons/bi";
 import { useRouter } from "next/navigation";
 export default function Header1({
@@ -13,11 +14,16 @@ export default function Header1({
   handlePopup,
   handleSidebar,
 }) {
-  const token = localStorage.getItem("token");
-  const router = useRouter()
+  const [jwt, setJwt] = useState("");
+  const router = useRouter();
+
+  useEffect(() => {
+    setJwt((jwt) => localStorage.getItem("token"));
+  }, []);
+
   const logOut = () => {
     localStorage.clear("token");
-    router.push("/login")
+    router.push("/login");
   };
   return (
     <>
@@ -48,7 +54,7 @@ export default function Header1({
                   </li>
                 </ul>
               </div>
-              {token && (
+              {jwt && (
                 <button
                   onClick={logOut}
                   className="bg-green-500 px-3 py-1 rounded-sm text-[#ffffff] flex justify-center items-center gap-1">
