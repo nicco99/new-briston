@@ -82,7 +82,7 @@ export default function Header1({
                     onClick={handleMobileMenu}
                   /> */}
                   <svg
-                    className="mx-auto text-[#ffffff]"
+                    className=" text-[#ffffff]"
                     onClick={handleMobileMenu}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
