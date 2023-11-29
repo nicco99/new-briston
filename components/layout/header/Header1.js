@@ -58,7 +58,7 @@ export default function Header1({
               )}
             </div>
             <div
-                  className="rounded-full lg:hidden  bg-green-500 flex justify-center items-center h-10 w-10"
+                  className="rounded-full mt-2 lg:hidden  bg-green-500 flex justify-center items-center h-10 w-10"
                   onClick={handleMobileMenu}>
                   {/* <BiMenu
                     className="mx-auto text-[#ffffff]"
