@@ -34,12 +34,6 @@ export default function Header1({
         <div className="header-top">
           <div className="auto-container">
             <div className="inner">
-              {/* <div className="top-left">
-                <div className="text">
-                  <span>Too Little!</span> Receiving $100 / Hr Consulting.{" "}
-                  <Link href="#">Start Today</Link>{" "}
-                </div>
-              </div> */}
               <div className="top-right">
                 <ul className="contact-info">
                   <li>
@@ -80,9 +74,13 @@ export default function Header1({
               {/*Nav Box*/}
               <div className="nav-outer clearfix">
                 {/*Mobile Navigation Toggler*/}
-                <div className="mobile-nav-toggler " onClick={handleMobileMenu}>
-                  <BiMenu className="mx-auto mt-3" onClick={handleMobileMenu} />
-                  {/* <Image width={50} height={50} src="/assets/images/icons/icon-bar.png" alt="image" /> */}
+                <div
+                  className="rounded-full lg:hidden mt-3 bg-green-500 flex justify-center items-center h-10 w-10"
+                  onClick={handleMobileMenu}>
+                  <BiMenu
+                    className="mx-auto text-[#ffffff]"
+                    onClick={handleMobileMenu}
+                  />  
                 </div>
                 {/* Main Menu */}
                 <nav className="main-menu navbar-expand-md navbar-light">
