@@ -75,7 +75,7 @@ const JobCard = ({
                   {/*header*/}
                   <div className="flex items-start justify-between  rounded-t">
                     <h3 className="text-3xl font-semibold">
-                      Are you sure you want to delete {title} job?
+                      Are you sure you want to delete {title} job post?
                     </h3>
                     <button
                       className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
