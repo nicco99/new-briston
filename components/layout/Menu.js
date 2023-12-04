@@ -6,22 +6,15 @@ export default function Menu() {
 
   return (
     <>
-      {/* <ul className="sub-menu">
-                <Link className={router.pathname == "/" ? "active" : ""}>Home Default</Link>
-                <Link className={router.pathname == "/index-2" ? "active" : ""}>Home Interior</Link>
-            </ul> */}
-
       <ul className="navigation clearfix">
         <li>
           <Link href="/">Home</Link>
-          <ul>
-            {/* <li>
-              <Link href="/index-2">Home Consulting</Link>
-            </li> */}
-          </ul>
+          <ul></ul>
         </li>
         <li className="dropdown">
-          <Link className="" href="#">Company</Link>
+          <Link className="" href="#">
+            Company
+          </Link>
           <ul>
             <li className="dropdown">
               <Link href="/about-2">About Us</Link>
@@ -146,9 +139,6 @@ export default function Menu() {
         <li className="dropdown">
           <Link href="/dashboard/jobs">Jobs</Link>
           <ul>
-            <li>
-              <Link href="/dashboard/job-post">Post job</Link>
-            </li>
             <li>
               <Link href="/dashboard/jobs">jobs</Link>
             </li>

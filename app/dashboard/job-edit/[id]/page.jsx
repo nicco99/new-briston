@@ -70,7 +70,7 @@ const Edit = ({ params }) => {
             onSubmit={handleSubmit}
             className="p-3 flex mx-auto flex-col  lg:w-2/3  bg-[#ffffff] rounded-md lg:shadow-lg py-5">
             <div className="w-full mb-2">
-              <p className="mb-2">Job title</p>
+              <p className="mb-2 font-[700] text-[20px]">Job title</p>
               <input
                 value={formData?.title}
                 name="title"
@@ -80,7 +80,7 @@ const Edit = ({ params }) => {
               />
             </div>
             <div className="w-full  mb-2">
-              <p className="mb-2">Job description</p>
+              <p className="mb-2 font-[700] text-[20px]">Job description</p>
               <textarea
                 value={formData?.description}
                 name="description"
@@ -90,7 +90,7 @@ const Edit = ({ params }) => {
               />
             </div>
             <div className="w-full">
-              <p className="mb-2">Deadline</p>
+              <p className="mb-2 font-[700] text-[20px]">Deadline</p>
               <input
                 name="deadline"
                 onChange={(e) => handleChange(e)}
@@ -99,10 +99,7 @@ const Edit = ({ params }) => {
               />
             </div>
             <div className="w-full">
-              <button className="p-2 hover:bg-blue-500 m-2 outline outline-1 rounded-md text-sm text-[#ffffff] mt-3">
-                back
-              </button>
-              <button className="p-2 bg-blue-500 m-2 rounded-md text-sm text-[#ffffff] mt-3">
+              <button className="p-2 bg-blue-500 rounded-md text-sm text-[#ffffff] mt-3">
                 {loading ? "updating..." : "Update"}
               </button>
             </div>

@@ -151,9 +151,6 @@ export default function MobileMenu({
                     style={{
                       display: `${isActive.key == 4 ? "block" : "none"}`,
                     }}>
-                    {/* <li>
-                      <Link href="/career">Career</Link>
-                    </li> */}
                     <li
                       className={
                         isActive.key == 10 ? "dropdown current" : "dropdown"
@@ -253,12 +250,7 @@ export default function MobileMenu({
                     <ul
                       style={{
                         display: `${isActive.key == 14 ? "block" : "none"}`,
-                      }}>
-                      <li>
-                        {" "}
-                        <Link href="/dashboard/job-post">Post Job</Link>
-                      </li>
-                    </ul>
+                      }}></ul>
                     <div
                       className={
                         isActive.key == 14

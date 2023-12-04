@@ -6,7 +6,7 @@ import ProtectedRoute from "@/components/layout/protectedRoute";
 import Layout from "@/components/layout/Layout";
 const Jobs = ({ jobList }) => {
   const [jobs, setJobs] = useState(jobList);
-
+ 
   const updateState = (job) => {
     const newJobs = jobs.filter((j) => j.id !== job.id);
     setJobs(newJobs);
@@ -26,9 +26,16 @@ const Jobs = ({ jobList }) => {
         </div>
 
         <div className="">
-          {jobs?.map((job) => (
-            <JobCard job={job} updateState={updateState} {...job} />
-          ))}
+          <div>
+            {jobs ? (
+              jobs?.map((job) => (
+                <JobCard job={job} updateState={updateState} {...job} />
+              ))
+            ) : (
+              <p>Loading..</p>
+            )}
+          </div>
+          
         </div>
       </div>
     </Layout>
