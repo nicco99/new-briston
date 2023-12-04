@@ -17,7 +17,7 @@ const Jobs = ({ jobList }) => {
       .then((res) => res.json())
       .then((data) => setJobs(data.job));
   }, []);
-
+console.log(jobs)
   return (
     <Layout headerStyle={1} footerStyle={1} wrapperCls="home_1">
       <div className="lg:w-9/12 lg:mx-auto">

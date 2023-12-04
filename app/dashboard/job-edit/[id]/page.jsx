@@ -41,6 +41,7 @@ const Edit = ({ params }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // alert(JSON.stringify(formData));
     setLoading(true);
     fetch(`https://bristol.onrender.com/jobs/${params.id}`, {
       method: "PATCH",
@@ -48,6 +49,8 @@ const Edit = ({ params }) => {
       body: JSON.stringify({
         title: formData.title,
         description: formData.description,
+        responsibilities: formData.responsibilities,
+        requirements: formData.requirements,
         deadline: formData.deadline,
       }),
     })
@@ -58,7 +61,6 @@ const Edit = ({ params }) => {
       });
     setLoading(false);
   };
-
   return (
     <ProtectedRoute>
       <Layout headerStyle={1} footerStyle={1} wrapperCls="home_1">
@@ -87,6 +89,28 @@ const Edit = ({ params }) => {
                 onChange={(e) => handleChange(e)}
                 className="border bottom-1 w-full p-2"
                 placeholder="job description"
+              />
+            </div>
+            <div className="w-full  mb-2">
+              <p className="mb-2 font-[700] text-[20px]">Job Requirements</p>
+              <textarea
+                value={formData?.requirements}
+                name="requirements"
+                onChange={(e) => handleChange(e)}
+                className="border bottom-1 w-full p-2 placeholder-blue-900"
+                placeholder="Write job requirements separated by a commas"
+              />
+            </div>
+            <div className="w-full  mb-2">
+              <p className="mb-2 font-[700] text-[20px]">
+                Job Responsibilities
+              </p>
+              <textarea
+                value={formData?.responsibilities}
+                name="responsibilities"
+                onChange={(e) => handleChange(e)}
+                className="border bottom-1 w-full p-2 placeholder-blue-900"
+                placeholder="Write job responsibilities separated by a commas"
               />
             </div>
             <div className="w-full">
