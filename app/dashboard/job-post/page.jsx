@@ -11,6 +11,8 @@ import { useState } from "react";
 const schema = yup.object({
   title: yup.string().required(),
   description: yup.string().required(),
+  responsibilities: yup.string().required(),
+  requirements: yup.string().required(),
   deadline: yup.string().required(),
 });
 
@@ -58,7 +60,7 @@ const PostJob = () => {
                 className="border  border-blue-900  bottom-1 w-full rounded-sm p-2 placeholder-blue-900 "
                 placeholder="job title"
               />
-              <p>{errors.title?.message}</p>
+              <p className="text-red-500">{errors.title?.message}</p>
             </div>
             <div className="w-full  mb-2">
               <p className="mb-2 font-[700] text-[20px]">Job description</p>
@@ -67,7 +69,25 @@ const PostJob = () => {
                 className="border bottom-1 w-full p-2 placeholder-blue-900"
                 placeholder="job description"
               />
-              <p>{errors.description?.message}</p>
+              <p className="text-red-500">{errors.description?.message}</p>
+            </div>
+            <div className="w-full  mb-2">
+              <p className="mb-2 font-[700] text-[20px]">Job Requirements</p>
+              <textarea
+                {...register("requirements")}
+                className="border bottom-1 w-full p-2 placeholder-blue-900"
+                placeholder="Write job requirements separated by a commas"
+              />
+              <p className="text-red-500">{errors.requirements?.message}</p>
+            </div>
+            <div className="w-full  mb-2">
+              <p className="mb-2 font-[700] text-[20px]">Job Responsibilities</p>
+              <textarea
+                {...register("responsibilities")}
+                className="border bottom-1 w-full p-2 placeholder-blue-900"
+                placeholder="Write job responsibilities separated by a commas"
+              />
+              <p className="text-red-500">{errors.responsibilities?.message}</p>
             </div>
             <div className="w-full">
               <p className="mb-2 font-[700] text-[20px]">Deadline</p>
@@ -76,7 +96,7 @@ const PostJob = () => {
                 type="date"
                 className="border bottom-1 w-full p-2 placeholder-blue-900"
               />
-              <p>{errors.deadline?.message}</p>
+              <p className="text-red-500">{errors.deadline?.message}</p>
             </div>
             <div className="w-full">
               <button className="p-2 w-full bg-blue-500 rounded-md text-sm text-[#ffffff] mt-4">

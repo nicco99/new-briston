@@ -8,6 +8,8 @@ const JobCard = ({
   job,
   id,
   title,
+  responsibilities,
+  requirements,
   description,
   created_at,
   deadline,
@@ -29,6 +31,8 @@ const JobCard = ({
     });
   };
 
+  const responsibilityList = responsibilities?.split(",");
+  const requirementsList = requirements?.split(",");
   const handleEdit = (id) => {
     router.push(`/dashboard/job-edit/${id}`);
   };
@@ -36,8 +40,21 @@ const JobCard = ({
   return (
     <>
       <div className="bg-[#ffffff] lg:shadow-md p-3">
-        <p className="font-[600]">{title}</p>
-        <p>{description}</p>
+        <p className="font-[600] mb-3">{title}</p>
+        <p className="font-[600]">Description:</p>
+        <p className="mb-3"> {description}</p>
+        <h4 className="font-[600]">Responsibilities</h4>
+        <ul>
+          {responsibilityList.map((item, i) => (
+            <li className="ml-3">-{item}</li>
+          ))}
+        </ul>
+        <h4 className="font-[600]">Requirements</h4>
+        <ul>
+          {requirementsList.map((item, i) => (
+            <li className="ml-3">-{item}</li>
+          ))}
+        </ul>
         <a href="mailto:consult@bristonhr.com">
           <button className="bg-blue-500 p-2 mt-3 rounded-md text-[#ffffff]">
             Easy apply
