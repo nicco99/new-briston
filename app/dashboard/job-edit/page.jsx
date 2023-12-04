@@ -45,14 +45,14 @@ const PostEdit = () => {
     <ProtectedRoute>
       <Layout headerStyle={1} footerStyle={1} wrapperCls="home_1">
         <div className="mb-2">
-          <div className="flex flex-row justify-between mt-12 mb-20 lg:w-9/12 mx-auto">
+          <div className="flex flex-row justify-between mt-12 mb-8 lg:w-9/12 mx-auto">
             <h2 className="font-[600] ">Post Jobs</h2>
           </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="p-3 flex mx-auto flex-col  lg:w-2/3  bg-[#ffffff] rounded-md lg:shadow-lg py-5">
             <div className="w-full mb-2">
-              <p className="mb-2">Job title</p>
+              <p className="mb-2 font-[700] text-[20px]">Job title</p>
               <input
                 {...register("title")}
                 className="border bottom-1 w-full rounded-sm p-2"
@@ -61,7 +61,7 @@ const PostEdit = () => {
               <p>{errors.title?.message}</p>
             </div>
             <div className="w-full  mb-2">
-              <p className="mb-2">Job description</p>
+              <p className="mb-2 font-[700] text-[20px]">Job description</p>
               <textarea
                 {...register("description")}
                 className="border bottom-1 w-full p-2"
@@ -70,7 +70,7 @@ const PostEdit = () => {
               <p>{errors.description?.message}</p>
             </div>
             <div className="w-full">
-              <p className="mb-2">Deadline</p>
+              <p className="mb-2 font-[700] text-[20px] ">Deadline</p>
               <input
                 {...register("deadline")}
                 type="date"

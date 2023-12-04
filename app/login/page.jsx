@@ -84,7 +84,7 @@ const Login = () => {
           </div>
           <div className="w-full">
             <button className="p-2 w-full mx-auto bg-blue-500 m-2 rounded-md text-sm text-[#ffffff] mt-3">
-              {loading ? "Processing.." : "Login"}
+              {loading ? "Signing in.." : "Login"}
             </button>
           </div>
         </form>
