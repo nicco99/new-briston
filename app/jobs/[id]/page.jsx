@@ -41,7 +41,7 @@ const JobPage = ({ params: { id } }) => {
       <div className="bg-[#ffffff] lg:shadow-md p-3">
         <div className="hover:underline cursor-pointer ml-auto w-auto">
           {" "}
-          <button className="p-1 mb-3 bg-[blue] text-[#ffffff] rounded-[5px]">
+          <button href="/jobs" className="p-1 mb-3 bg-[blue] text-[#ffffff] rounded-[5px]">
             Back
           </button>
         </div>
