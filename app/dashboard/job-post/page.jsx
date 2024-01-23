@@ -39,7 +39,7 @@ const PostJob = () => {
       .then((data) => {
         console.log(data);
         setLoading(false);
-        router.push("/dashboard/jobs");
+        router.push("/jobs");
       });
   };
 
