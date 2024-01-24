@@ -245,7 +245,7 @@ export default function MobileMenu({
                     className={
                       isActive.key == 14 ? "dropdown current" : "dropdown"
                     }>
-                    <Link href="/dashboard/jobs">Jobs</Link>
+                    <Link href="/jobs">Jobs</Link>
 
                     <ul
                       style={{

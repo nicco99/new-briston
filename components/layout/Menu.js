@@ -137,10 +137,10 @@ export default function Menu() {
           </ul>
         </li>
         <li className="dropdown">
-          <Link href="/dashboard/jobs">Jobs</Link>
+          <Link href="/jobs">Jobs</Link>
           <ul>
             <li>
-              <Link href="/dashboard/jobs">jobs</Link>
+              <Link href="/jobs">jobs</Link>
             </li>
           </ul>
         </li>
